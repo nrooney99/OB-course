@@ -8,6 +8,7 @@ import { ComponenteConContexto } from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
 import { AllCycles } from './hooks/lifecycle/AllCycles';
 import { useState } from 'react';
+import { Father } from './components/container/father';
 
 function App() {
   const [status, setStatus] = useState(false)
@@ -23,8 +24,9 @@ function App() {
           <p>Children2</p>
           <p>Children3</p>
         </Ejemplo4> */}
-        {status?<AllCycles/>:<></>}
-        <button onClick={()=>{setStatus(!status)}}>Toggle</button>
+        {/* {status?<AllCycles/>:<></>}
+        <button onClick={()=>{setStatus(!status)}}>Toggle</button> */}
+        <Father/>
   
       </header>
     </div>
