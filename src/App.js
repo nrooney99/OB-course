@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <TaskListComponent/> */}
+        <TaskListComponent/>
         {/* <ContactContainer/> */}
         {/* <ComponenteConContexto/> */}
         {/* <Ejemplo4>
@@ -26,7 +26,8 @@ function App() {
         </Ejemplo4> */}
         {/* {status?<AllCycles/>:<></>}
         <button onClick={()=>{setStatus(!status)}}>Toggle</button> */}
-        <Father/>
+        {/* <Father/> */}
+
   
       </header>
     </div>
