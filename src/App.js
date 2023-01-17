@@ -9,6 +9,7 @@ import Ejemplo4 from './hooks/Ejemplo4';
 import { AllCycles } from './hooks/lifecycle/AllCycles';
 import { useState } from 'react';
 import { Father } from './components/container/father';
+import OptionalRender from './components/pure/optionalRender';
 
 function App() {
   const [status, setStatus] = useState(false)
@@ -16,7 +17,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <TaskListComponent/>
+        {/* <TaskListComponent/> */}
         {/* <ContactContainer/> */}
         {/* <ComponenteConContexto/> */}
         {/* <Ejemplo4>
@@ -27,6 +28,7 @@ function App() {
         {/* {status?<AllCycles/>:<></>}
         <button onClick={()=>{setStatus(!status)}}>Toggle</button> */}
         {/* <Father/> */}
+        <OptionalRender/>
 
   
       </header>
