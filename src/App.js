@@ -10,9 +10,11 @@ import { AllCycles } from './hooks/lifecycle/AllCycles';
 import { useState } from 'react';
 import { Father } from './components/container/father';
 import OptionalRender from './components/pure/optionalRender';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 function App() {
   const [status, setStatus] = useState(false)
+  const location = useLocation();
   return (
     <div className="App">
       <header className="App-header">
@@ -28,7 +30,9 @@ function App() {
         {/* {status?<AllCycles/>:<></>}
         <button onClick={()=>{setStatus(!status)}}>Toggle</button> */}
         {/* <Father/> */}
-        <OptionalRender/>
+        {/* <OptionalRender/> */}
+        {/* <button onClick={()=>navigate(-1)}>Go back</button> */}
+        <Outlet />
 
   
       </header>
