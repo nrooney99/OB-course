@@ -11,6 +11,8 @@ import { useState } from 'react';
 import { Father } from './components/container/father';
 import OptionalRender from './components/pure/optionalRender';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import PromisesExample from './examples/PromisesExample';
+import FetchExample from './examples/FetchExample';
 
 function App() {
   const [status, setStatus] = useState(false)
@@ -32,8 +34,9 @@ function App() {
         {/* <Father/> */}
         {/* <OptionalRender/> */}
         {/* <button onClick={()=>navigate(-1)}>Go back</button> */}
+        {/* <PromisesExample/> */}
+        <FetchExample />
         <Outlet />
-
   
       </header>
     </div>
